@@ -1,0 +1,334 @@
+*{margin: 0; padding: 0;background-repeat: no-repeat; box-sizing: border-box;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{display: block; max-width: 100%;}
+button{background-color: transparent; border: none; cursor: pointer;}
+input{background-color: transparent; border: none;}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+#wrapper{min-width: 320px; background-color: white;}
+
+header{}
+header .wrap{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    font-family: 'Nanum Gothic';
+}
+header .wrap .top{
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    color: #626262;
+    font-size: 13px;
+}
+header .wrap .top .en{display: flex;}
+header .wrap .top .en li:first-child:after{
+    content: '|';  
+    padding: 0 10px;
+}
+header .wrap .top .gnb{display: flex; gap: 10px;}
+header .wrap .bottom{display: flex; padding: 10px 200px; align-items: center; width: 100%;}
+header .wrap .bottom h1{padding-right: 90px;}
+header .wrap .bottom h1 img{width: 80px;}
+header .wrap .bottom .menu{
+    display: flex;
+    font-weight: bold;
+    font-size: 22px;
+    gap: 20px;
+    text-align: left;
+}
+header .wrap .bottom .btn{display: flex; gap: 15px; margin-left: auto;}
+header .wrap .bottom .btn .order a{
+    display: block;
+    width: 115px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #bd0017;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+header .wrap .bottom .btn .tracking a{
+    display: block;
+    width: 115px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #ffc31a;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.banner{width: 100%; height: 100%; background-color: #ffc31a;}
+.banner img{width: 1300px; margin: 0 auto;}
+
+#contents{}
+
+/* 이벤트 스와이퍼 */
+html,body {
+    position: relative;
+    height: 100%;
+}
+
+.event-swiper {
+      width: 100%;
+      height: 100%;
+}
+
+.event-swiper_slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-swiper_slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination span{
+    background-color: #1d1d1b;
+}
+
+/* 이벤트 코딩 */
+.event{
+    width: 100%;
+    padding: 150px 0;
+    background-image: url(../images/event_bg.png);
+    background-size: 1920px;
+    background-position: top;
+    background-repeat: repeat;
+    position: relative;
+}
+.event::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.event .wrap{
+    width: 80%;
+    margin: 0 auto; 
+    font-family: 'Nanum Gothic';
+    font-size: 22px;
+    position: relative;
+}
+.event .wrap h3{text-align: center;}
+.event .wrap .event-swiper_wrapper{margin-top: 30px;}
+.event .wrap .event-swiper_slide{
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffc31a;
+   
+}
+.event .wrap .event-swiper_slide .txt{
+    color: white;
+    text-align: left;
+    margin: 10px 10px;
+    font-weight: bold;
+}
+
+.event .wrap .event-swiper_slide .img{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.event .wrap .event-swiper_slide .img::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to top, #ffc31a, #ffc21a00 100%)
+}
+.event .wrap .event-swiper_slide .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.app{
+    background-color: #ffc31a;
+    background-image: url(../images/app_bg.png);
+    background-size: 1920px;
+}
+.app .wrap{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 150px 0 100px 0;
+    font-family: 'Nanum Gothic';
+}
+.app .wrap img{width: 800px;}
+.app .wrap .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.app .wrap .text .tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+.app .wrap .text .tit span{
+    color: #bd0017;
+}
+.app .wrap .text .txt{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.app .wrap .text .QR{margin-top: 20px;}
+.app .wrap .text .QR img{width: 250px;}
+.app .wrap .text .QR img:last-child{margin-top: 10px;}
+
+.mac-drive{
+    background-color: #ffc31a;
+    background-image: url(../images/mac-drive_bg.png);
+    background-size: 1400px;
+    background-position: center bottom;
+}
+.mac-drive .wrap{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 300px;
+}
+.mac-drive .wrap .text{
+    text-align: center;
+}
+.mac-drive .wrap .text .tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+.mac-drive .wrap .text .txt{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mac-drive .wrap .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30%;
+}
+.mac-drive .wrap .button a{
+    display: block;
+    padding: 20px 20px;
+    background-color: #1d1d1b;
+    color: white;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.mac-delivery{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/bg_visual_store01.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative; 
+}
+.mac-delivery .wrap{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Nanum Gothic';
+}
+.mac-delivery .wrap .top{
+   
+}
+@keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+.flow-text{
+    width: 100%;
+    position: absolute; 
+    display: flex;
+    padding: 20px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.flow-wrap {
+    animation: textLoop 2s linear infinite;
+    padding-right: 1.4881vw;
+  }
+.mac-delivery .wrap .con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mac-delivery .wrap .text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.mac-delivery .wrap .button{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center ;
+}
+.mac-delivery .wrap .button a{
+    padding: 20px 20px;
+    background-color: #bd0017;
+    color: white;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+footer{background-color: #1d1d1b;}
+footer .wrap{font-family: 'Nanum Gothic';}
+footer .wrap .top{
+    color: white;
+    padding: 100px 0;
+    border-bottom: white solid 1px;
+    background-image: url(../images/footer_bg.png);
+    background-size: 1400px;
+    background-position: center bottom;
+}
+footer .wrap .top .logo{display: flex; justify-content: center;}
+footer .wrap .top .logo img{width: 100px;}
+footer .wrap .top .text{text-align: center;}
+footer .wrap .top .text .tit{font-weight: bold; font-size: 30px; margin-top: 20px;}
+footer .wrap .top .text .txt{margin-top: 10px;}
+footer .wrap .top .sns{display: flex; gap: 10px; justify-content: center; margin-top: 20px;}
+footer .wrap .bottom{color: white; text-align: center; padding: 50px 0;}
+footer .wrap .bottom ul{display: flex; justify-content: center;}
+footer .wrap .bottom ul li{margin-right: 10px;}
+footer .wrap .bottom ul li::after{
+    content: '|';
+    margin-left: 10px;
+}
+footer .wrap .bottom ul li:last-child{margin-right: 0; font-weight: bold;}
+footer .wrap .bottom ul li:last-child:after{
+    content: '';
+    margin-left: 0;
+}
+footer .wrap .bottom p{margin-top: 30px; font-size: 13px; color: #626262;}
