@@ -23,7 +23,8 @@ header .wrap .top{
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
-    padding: 10px 200px;
+    padding: 10px 0;
+    width: 80%;
     color: #626262;
     font-size: 13px;
 }
@@ -33,7 +34,7 @@ header .wrap .top .en li:first-child:after{
     padding: 0 10px;
 }
 header .wrap .top .gnb{display: flex; gap: 10px;}
-header .wrap .bottom{display: flex; padding: 10px 200px; align-items: center; width: 100%;}
+header .wrap .bottom{display: flex; padding: 10px 0; align-items: center; width: 80%;}
 header .wrap .bottom h1{padding-right: 90px;}
 header .wrap .bottom h1 img{width: 80px;}
 header .wrap .bottom .menu{
