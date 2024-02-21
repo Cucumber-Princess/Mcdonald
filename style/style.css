@@ -23,8 +23,7 @@ header .wrap .top{
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    width: 80%;
+    padding: 10px 110px;
     color: #626262;
     font-size: 13px;
 }
@@ -34,7 +33,7 @@ header .wrap .top .en li:first-child:after{
     padding: 0 10px;
 }
 header .wrap .top .gnb{display: flex; gap: 10px;}
-header .wrap .bottom{display: flex; padding: 10px 0; align-items: center; width: 80%;}
+header .wrap .bottom{display: flex; padding: 10px 0; align-items: center; width: 80%; margin: 0 auto;}
 header .wrap .bottom h1{padding-right: 90px;}
 header .wrap .bottom h1 img{width: 80px;}
 header .wrap .bottom .menu{
@@ -43,6 +42,7 @@ header .wrap .bottom .menu{
     font-size: 22px;
     gap: 20px;
     text-align: left;
+    white-space: nowrap;
 }
 header .wrap .bottom .btn{display: flex; gap: 15px; margin-left: auto;}
 header .wrap .bottom .btn .order a{
